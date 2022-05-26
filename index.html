@@ -29,22 +29,28 @@
       <div class="form-container">
         <form action="#">
           <legend>Let's do some good!</legend>
-          <label for="first-name">First name</label>
-          <input type="text" name="firstName" id="first-name" />
-          <label for="last-name">Last name</label>
-          <input type="text" name="lastName" id="last-name" />
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" />
-          <label for="phone-number">Phone number</label>
-          <input type="tel" name="phoneNumber" id="phone-number" />
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
-          <label for="password">Confirm password</label>
-          <input
-            type="password"
-            name="passwordConfirmation"
-            id="password-confirmation"
-          />
+          <div class="full-name">
+            <label for="first-name">First name</label>
+            <input type="text" name="firstName" id="first-name" />
+            <label for="last-name">Last name</label>
+            <input type="text" name="lastName" id="last-name" />
+          </div>
+          <div class="contact-data">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" />
+            <label for="phone-number">Phone number</label>
+            <input type="tel" name="phoneNumber" id="phone-number" />
+          </div>
+          <div class="passwords">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <label for="password">Confirm password</label>
+            <input
+              type="password"
+              name="passwordConfirmation"
+              id="password-confirmation"
+            />
+          </div>
         </form>
       </div>
       <button type="button">Create Account</button>
