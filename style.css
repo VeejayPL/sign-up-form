@@ -1,0 +1,61 @@
+:root {
+  --color-alice-blue: #f0f8ff;
+  --color-opal: #9dbebb;
+  --color-spring-bud: #9dff00;
+  --color-kombu-green: #31493c;
+  --color-rich-black: #001a23;
+}
+@font-face {
+  font-family: carbon;
+  src: url(./carbontype-webfont.woff);
+}
+@font-face {
+  font-family: action;
+  src: url(./Action_Man-webfont.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  color: var(--color-alice-blue);
+}
+/* ==============  Sidebar  ========================*/
+.sidebar {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-rich-black);
+}
+.sidebar-content {
+  border-radius: 16px;
+  box-shadow: inset 0px 0px 10px 10px var(--color-spring-bud);
+  text-align: center;
+}
+
+/* ================  FONTS  ======================= */
+
+aside h1 {
+  font-family: "carbon", sans-serif;
+  color: var(--color-spring-bud);
+  font-size: clamp(1rem, 10vw, 10rem);
+  padding: 20px;
+}
+h1 {
+  font-family: "action";
+}
+
+main {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-rich-black);
+}
