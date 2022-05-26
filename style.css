@@ -7,11 +7,11 @@
 }
 @font-face {
   font-family: carbon;
-  src: url(./carbontype-webfont.woff);
+  src: url(./assets/carbontype-webfont.woff);
 }
 @font-face {
   font-family: action;
-  src: url(./Action_Man-webfont.woff);
+  src: url(./assets/Action_Man-webfont.woff);
 }
 * {
   margin: 0;
@@ -26,6 +26,7 @@ body {
   display: flex;
   color: var(--color-alice-blue);
 }
+
 /* ==============  Sidebar  ========================*/
 .sidebar {
   width: 40%;
@@ -43,9 +44,9 @@ body {
 
 /* ================  FONTS  ======================= */
 
-aside h1 {
+.sidebar h1 {
   font-family: "carbon", sans-serif;
-  color: var(--color-spring-bud);
+  color: var(--color-alice-blue);
   font-size: clamp(1rem, 10vw, 10rem);
   padding: 20px;
 }
@@ -58,4 +59,8 @@ main {
   display: flex;
   flex-direction: column;
   background: var(--color-rich-black);
+}
+
+img:hover {
+  fill: red;
 }
