@@ -116,3 +116,55 @@ label {
   position: absolute;
   padding: 2px;
 }
+
+/* Animation */
+
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.95) rotate(-1deg);
+    opacity: 0.6;
+  }
+  35% {
+    transform: scale(1.05) rotate(1deg);
+    opacity: 6;
+  }
+  45% {
+    transform: scale(0.97) rotate(-1deg);
+    opacity: 0.6;
+  }
+  55% {
+    transform: scale(1.03) rotate(1deg);
+    opacity: 1;
+  }
+  65% {
+    transform: scale(0.95) rotate(-1deg);
+    opacity: 0.6;
+  }
+  75% {
+    transform: scale(1.05) rotate(1deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes vibration {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+img:hover {
+  animation: beat 1s 1;
+  transform-origin: center;
+}
