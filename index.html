@@ -28,37 +28,76 @@
       <p>Just so you know...this is not a real service.</p>
       <div class="form-container">
         <p>Let's do some good!</p>
-        <form action="#">
+        <form action="#" autocomplete="off">
           <div class="full-name">
             <div>
-              <input type="text" name="firstName" id="first-name" />
+              <input
+                type="text"
+                name="firstName"
+                id="first-name"
+                required
+                placeholder=" "
+              />
               <label for="first-name">First name</label>
+              <p>Field required</p>
             </div>
             <div>
-              <input type="text" name="lastName" id="last-name" />
+              <input
+                type="text"
+                name="lastName"
+                id="last-name"
+                required
+                placeholder=" "
+              />
               <label for="last-name">Last name</label>
+              <p>Field required</p>
             </div>
           </div>
           <div class="contact-details">
             <div>
-              <input type="email" name="email" id="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder=" "
+              />
               <label for="email">E-mail</label>
+              <p>Field required</p>
             </div>
             <div>
-              <input type="tel" name="phoneNumber" id="phone-number" />
+              <input
+                type="tel"
+                name="phoneNumber"
+                id="phone-number"
+                pattern="[0-9]{3} [0-9]{3} [0-9]{3}"
+                placeholder=" "
+              />
               <label for="phone-number">Phone number</label>
+              <p>Format: 123 123 123</p>
             </div>
           </div>
           <div class="passwords">
             <div>
-              <input type="password" name="password" id="password" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                minlength="6"
+                required
+                placeholder=" "
+              />
               <label for="password">Password</label>
+              <p>Must be at least six characters</p>
             </div>
             <div>
               <input
                 type="password"
                 name="passwordConfirmation"
                 id="password-confirmation"
+                minlength="6"
+                required
+                placeholder=" "
               />
               <label for="password">Confirm password</label>
             </div>
