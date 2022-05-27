@@ -27,29 +27,41 @@
       </h1>
       <p>Just so you know...this is not a real service.</p>
       <div class="form-container">
+        <p>Let's do some good!</p>
         <form action="#">
-          <legend>Let's do some good!</legend>
           <div class="full-name">
-            <label for="first-name">First name</label>
-            <input type="text" name="firstName" id="first-name" />
-            <label for="last-name">Last name</label>
-            <input type="text" name="lastName" id="last-name" />
+            <div>
+              <input type="text" name="firstName" id="first-name" />
+              <label for="first-name">First name</label>
+            </div>
+            <div>
+              <input type="text" name="lastName" id="last-name" />
+              <label for="last-name">Last name</label>
+            </div>
           </div>
-          <div class="contact-data">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" />
-            <label for="phone-number">Phone number</label>
-            <input type="tel" name="phoneNumber" id="phone-number" />
+          <div class="contact-details">
+            <div>
+              <input type="email" name="email" id="email" />
+              <label for="email">E-mail</label>
+            </div>
+            <div>
+              <input type="tel" name="phoneNumber" id="phone-number" />
+              <label for="phone-number">Phone number</label>
+            </div>
           </div>
           <div class="passwords">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
-            <label for="password">Confirm password</label>
-            <input
-              type="password"
-              name="passwordConfirmation"
-              id="password-confirmation"
-            />
+            <div>
+              <input type="password" name="password" id="password" />
+              <label for="password">Password</label>
+            </div>
+            <div>
+              <input
+                type="password"
+                name="passwordConfirmation"
+                id="password-confirmation"
+              />
+              <label for="password">Confirm password</label>
+            </div>
           </div>
         </form>
       </div>
