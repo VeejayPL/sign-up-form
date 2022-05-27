@@ -67,10 +67,9 @@ label {
 }
 .sidebar h1 {
   padding: 20px;
+  border-bottom: 2px solid var(--color-spring-bud);
 }
 .sidebar-content {
-  border-radius: 16px;
-  box-shadow: inset 0px 0px 10px 10px var(--color-spring-bud);
   text-align: center;
 }
 
