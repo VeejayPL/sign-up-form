@@ -223,25 +223,29 @@ img:hover {
 
 @media (max-width: 800px) {
   body {
-    margin-top: 4rem;
-    height: 200vh;
+    margin-top: 2rem;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
+  img {
+    visibility: hidden;
+  }
   .sidebar {
-    margin-top: 3rem;
     width: 100%;
-    height: 100vh;
+    height: 20vh;
     justify-content: flex-start;
   }
   .sidebar h1 {
     font-size: 5rem;
     padding: 0;
   }
+  .main-container h1 {
+    font-size: 1rem;
+  }
   .main-container {
-    margin-top: 3rem;
-    height: 100vh;
+    height: 90vh;
     width: 90vw;
     justify-content: flex-start;
   }
@@ -249,9 +253,13 @@ img:hover {
     margin-top: 2rem;
   }
   .form-container {
-    margin-top: 1rem;
-    padding: 20px;
+    margin-top: 0.5rem;
+    height: max(40vh);
+    padding: 5px 10px;
     width: 100%;
+  }
+  .form-container p {
+    padding: 5px;
   }
   button,
   button + p {
@@ -262,17 +270,16 @@ img:hover {
   .contact-details,
   .passwords {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    gap: 5vw;
   }
   form {
     font-size: 0.7rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   input {
     height: fit-content;
-    width: 8.4rem;
+    width: 100%;
     padding: 8px 0px 0px 20px;
   }
   input:focus + label {
