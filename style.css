@@ -146,7 +146,7 @@ input:focus {
   outline-color: var(--color-spring-bud);
 }
 input:focus + label {
-  top: -25px;
+  top: -20px;
   opacity: 1;
   color: var(--color-alice-blue);
 }
