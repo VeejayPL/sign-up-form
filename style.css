@@ -99,7 +99,18 @@ label {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-}•••
+}
+.main-container > p:first-of-type {
+  align-self: flex-start;
+}
+.form-container {
+  height: 40%;
+  width: 100%;
+  background: var(--color-kombu-green);
+  border-radius: 16px;
+  padding: 1vw;
+}
+button {
   padding: 1vw;
   border-radius: 16px;
   background: var(--color-spring-bud);
