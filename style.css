@@ -74,7 +74,6 @@ label {
 }
 .sidebar h1 {
   padding: 20px;
-  /* border-bottom: 2px solid var(--color-spring-bud); */
 }
 .animated-border {
   position: relative;
@@ -88,10 +87,10 @@ label {
   border-bottom: 1px solid var(--color-spring-bud);
   animation: train 4s ease 2s infinite alternate;
 }
-img:hover {
+/* img:hover {
   animation: beat 1s 1;
   transform-origin: center;
-}
+} */
 
 /* ============== Main =============================*/
 .main-container {
@@ -100,18 +99,7 @@ img:hover {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-}
-.main-container > p:first-of-type {
-  align-self: flex-start;
-}
-.form-container {
-  height: 40%;
-  width: 100%;
-  background: var(--color-kombu-green);
-  border-radius: 16px;
-  padding: 1vw;
-}
-button {
+}•••
   padding: 1vw;
   border-radius: 16px;
   background: var(--color-spring-bud);
@@ -184,7 +172,7 @@ form p {
   visibility: hidden;
 }
 /* ==============  Animation   =====================*/
-@keyframes beat {
+/* @keyframes beat {
   0% {
     transform: scale(1) rotate(0deg);
     opacity: 1;
@@ -216,7 +204,7 @@ form p {
   100% {
     transform: scale(1) rotate(0deg);
   }
-}
+} */
 @keyframes vibration {
   0% {
     transform: translate(0);
