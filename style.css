@@ -74,10 +74,23 @@ label {
 }
 .sidebar h1 {
   padding: 20px;
-  border-bottom: 2px solid var(--color-spring-bud);
+  /* border-bottom: 2px solid var(--color-spring-bud); */
 }
-.sidebar-content {
-  text-align: center;
+.animated-border {
+  position: relative;
+}
+.animated-border::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--color-spring-bud);
+  animation: train 4s ease 2s infinite alternate;
+}
+img:hover {
+  animation: beat 1s 1;
+  transform-origin: center;
 }
 
 /* ============== Main =============================*/
@@ -214,11 +227,14 @@ form p {
     transform: rotate(0deg);
   }
 }
-img:hover {
-  animation: beat 1s 1;
-  transform-origin: center;
+@keyframes train {
+  0% {
+    transform: scaleX(100%);
+  }
+  100% {
+    transform: scaleX(0%);
+  }
 }
-
 /* ============ Styling for mobile  ============== */
 
 @media (max-width: 800px) {
